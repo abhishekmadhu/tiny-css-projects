@@ -1,0 +1,72 @@
+nav.project-list {
+    /* Adds a visible border around the element
+    - उस तत्व के चारों ओर एक दृश्य सीमा बनाता है जो काले रंग का होगा */
+    border: 2px solid black;
+    
+    /* This makes the corners of the element curved/rounded
+    - यह तत्व के कोनों को घुमावदार बनाता है */
+    border-radius: 2rem;
+
+    /* The element's border will the basis of the "space" of the element 
+    - तत्व (element) की सीमा (border) तत्व के "क्षेत्र" (area/space) का आधार (basis) होगी */
+    box-sizing: border-box; 
+
+    /* Aligns the text to the center of the element 
+    - लेख को तत्व के केंद्र में संरेखित करता है */
+    /* As you can see, the names of the properties (like "text-align") are self-explanatory 
+    - जैसा कि आप देख सकते हैं, चरित्र (property, "टेक्स्ट-एलाइन" की तरह) के नाम स्व-व्याख्यात्मक हैं*/
+    text-align: center;
+
+    max-width: 50%;
+
+    /* Margin takes 1-4 values. VSCode will show the values on hover. 
+    if there are two parameter, the first means the margin on top and bottom
+    and the second means margin on left and right
+    If the margin for left and right is 'auto', it will center the whole element
+    with respect to the parent element (not just the content in it) 
+    -- मार्जिन 4 मान लेता है। होवर करने पर VSCode मान दिखाएगा।
+    यदि दो पैरामीटर हैं, तो पहले का मतलब ऊपर और नीचे मार्जिन है
+    और दूसरे का अर्थ है बाएँ और दाएँ मार्जिन
+    यदि बाएँ और दाएँ के लिए मार्जिन 'ऑटो' है, तो यह मूल तत्व के संबंध में पूरे तत्व को केंद्रित करेगा (न केवल इसमें सामग्री) */
+    margin: 0 auto;
+
+    /* Make the line height >= 2 rem. For now, we are using 2. */
+    line-height: 4rem;
+}
+
+h2 {
+    box-sizing: border-box;
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0;
+}
+
+nav.project-list ol li {
+    /* automatic centering on both sides
+    - स्वचालित रूप से दोनों तरफ केंद्रित होता है (बाएं और दाएं) */
+    margin: 0 auto;
+    padding: 0.5rem auto;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    list-style-type: none;
+}
+
+nav.project-list ol li:hover,
+nav.project-list ol li:focus
+ {
+    background-color: rgb(255, 224, 101);
+}
+
+
+nav.project-list ol li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: darkcyan;
+
+    /* Force anchor tag to become a block level element instead of default inline element */
+    display: block;
+    
+}
+
+nav.project-list ol li:last-child {
+    border-radius: 0 0 2rem 2rem;
+}
