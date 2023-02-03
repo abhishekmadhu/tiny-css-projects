@@ -1,0 +1,23 @@
+section.learningCssColumns .columns {
+    /*column-count: 4; /* This is the max number of columns */
+    /*column-width: 250px; /* This is the min size that it will use */
+
+    columns: 4 250px;
+    column-rule: 1px solid red;
+    column-gap: 2rem;
+}
+
+section.learningCssColumns .columns h3 {
+    background-color: darkcyan;
+    color:aliceblue;
+    break-inside: avoid;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0;
+    /* break-before: column; /* => Do not use this is your page can be shrunk down to one column in any situation*/
+}
+
+section.learningCssColumns .columns p.textInColumns {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
