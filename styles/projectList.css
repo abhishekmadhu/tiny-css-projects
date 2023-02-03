@@ -78,12 +78,12 @@ If you swap the order, then the blue comes later, and it will override the white
 
 
 
-/* nav.project-list ol li:hover,
-nav.project-list ol li:focus
- {
-    color: ivory;
-    background-color: rgb(69, 68, 64);
-} */
+
+nav.project-list ol li a:before,
+nav.project-list ol li a:after {
+    content: none;
+}
+
 
 nav.project-list ol li {
     /* automatic centering on both sides

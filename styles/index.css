@@ -17,8 +17,14 @@ Please come back to this only after chapter 6 after we cover positioning */
 }
 
 body {
+    /* Rem stands for Root Element size. This is set by browser. 
+    0.5rem means we want 0.5 of that size */
     margin: 0.5 rem;
+
+    /* Remove "Roboto" and the comma from the list below, and see how the font changes */
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    
+    
     font-size: 1.5rem;
 }
 
