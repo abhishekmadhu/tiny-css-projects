@@ -3,6 +3,9 @@ Please come back to this only after chapter 6 after we cover positioning */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+/* This is a CSS reset. This makes sure that the styles coming from the browser are overridden 
+    - यह एक सीएसएस रीसेट है। यह सुनिश्चित करता है कि ब्राउज़र से आने वाली शैलियों को ओवरराइड किया गया है
+*/
 * {
     padding: 0;
     margin: 0;

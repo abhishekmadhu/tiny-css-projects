@@ -40,32 +40,61 @@ h2 {
     border-radius: 2rem 2rem 0 0;
 }
 
+
+
+nav.project-list ol li a {
+    box-sizing: border-box;
+    text-decoration: none;
+
+    /* Force anchor tag to become a block level element instead of default inline element */
+    display: block;
+    
+}
+
+/* Swap the order of the following two selection blocks, and see that happens */
+nav.project-list ol li a:visited {
+    color: rgb(47, 47, 224);
+}
+nav.project-list ol li a:hover {
+    color: white;
+    text-decoration-line: underline;
+}
+
+/*Explanation of what happened when you swap the above statements: 
+Both `nav.project-list ol li a:visited` and `nav.project-list ol li a:hover` have the 
+same strength of specificity. 
+Therefore, the system will use the that it encounters in order. 
+
+Currently, the general color is blue. So, when not hovered, the color will show as blue for visited links. 
+Next, when hovered, the element that comes "after/later" will be used. So, color will be white. 
+
+If you swap the order, then the blue comes later, and it will override the white color even when hovered. 
+
+*/
+
+
+
+
+
+nav.project-list ol li:hover,
+nav.project-list ol li:focus
+ {
+    color: ivory;
+    background-color: rgb(69, 68, 64);
+}
+
 nav.project-list ol li {
     /* automatic centering on both sides
     - स्वचालित रूप से दोनों तरफ केंद्रित होता है (बाएं और दाएं) */
     margin: 0 auto;
     padding: 0.5rem auto;
     box-sizing: border-box;
+    color: darkcyan;
     border-top: 1px solid black;
     list-style-type: none;
 }
 
-nav.project-list ol li:hover,
-nav.project-list ol li:focus
- {
-    background-color: rgb(255, 224, 101);
-}
 
-
-nav.project-list ol li a {
-    box-sizing: border-box;
-    text-decoration: none;
-    color: darkcyan;
-
-    /* Force anchor tag to become a block level element instead of default inline element */
-    display: block;
-    
-}
 
 nav.project-list ol li:last-child {
     border-radius: 0 0 2rem 2rem;
