@@ -1,0 +1,40 @@
+
+
+body {
+    /* Rem stands for Root Element size. This is set by browser. 
+    0.5rem means we want 0.5 of that size */
+    margin: 0.5 rem;
+
+    /* Remove "Roboto" and the comma from the list below, and see how the font changes */
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    
+    
+    font-size: 1.5rem;
+}
+
+.block {
+    width: 30vh;
+    height: 30vh;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float:right;
+    margin-left: 1rem;
+}
+
+
+.container {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    display: flow-root; /* This is the right way of ensuring that the container contains the float */
+    margin: 0.5rem;
+}

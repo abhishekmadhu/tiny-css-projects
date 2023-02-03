@@ -1,0 +1,100 @@
+/* This CSS is advanced. 
+Please come back to this only after chapter 6 after we cover positioning */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
+body {
+    /* Rem stands for Root Element size. This is set by browser. 
+    0.5rem means we want 0.5 of that size */
+    margin: 0.5 rem;
+
+    /* Remove "Roboto" and the comma from the list below, and see how the font changes */
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    
+    
+    font-size: 1.5rem;
+}
+
+a,
+a:hover, 
+a:focus {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover, 
+a:focus {
+    color: red;
+}
+
+/* :before is a pseudo-selector. It can add content and formatting "before" each of the selected elements */
+a:before {
+    content: "[ ";
+}
+/* :after is a pseudo-selector. It can add content and formatting "after" each of the selected elements */
+a:after {
+    content: " ]";
+}
+
+a:after,
+a:before {
+    /* you can style the before and after pseudoselectors independent from the element itself */
+    color: rgb(0, 255, 255);
+}
+
+div.description-of-purpose{
+    margin: 1rem;
+    padding: 1rem;
+    color:darkslategray ;
+    font-size: 1rem;
+}
+
+nav.crumbs{
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::before {
+    display: inline-block;
+    color: #000;
+
+    /* You can use any emoji here, to make this fun 
+    Anything that supports unicode can be here */
+    content: '⚫️';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.disclaimer {
+    /* You can use relative terms like large and small and 
+    extra extra small to denote sizes in many contexts */
+    font-size: xx-small;
+
+    margin: 1rem;
+
+    text-align: center;
+}
