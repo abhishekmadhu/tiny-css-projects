@@ -55,9 +55,13 @@ nav.project-list ol li a {
 nav.project-list ol li a:visited {
     color: rgb(47, 47, 224);
 }
-nav.project-list ol li a:hover {
+nav.project-list ol li a:hover, 
+nav.project-list ol li a:focus 
+ {
     color: white;
     text-decoration-line: underline;
+    color: ivory;
+    background-color: rgb(69, 68, 64);
 }
 
 /*Explanation of what happened when you swap the above statements: 
@@ -74,14 +78,12 @@ If you swap the order, then the blue comes later, and it will override the white
 
 
 
-
-
-nav.project-list ol li:hover,
+/* nav.project-list ol li:hover,
 nav.project-list ol li:focus
  {
     color: ivory;
     background-color: rgb(69, 68, 64);
-}
+} */
 
 nav.project-list ol li {
     /* automatic centering on both sides
@@ -96,6 +98,6 @@ nav.project-list ol li {
 
 
 
-nav.project-list ol li:last-child {
+nav.project-list ol li:last-child a {
     border-radius: 0 0 2rem 2rem;
 }

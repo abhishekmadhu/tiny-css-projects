@@ -22,6 +22,37 @@ body {
     font-size: 1.5rem;
 }
 
+a,
+a:hover, 
+a:focus {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover, 
+a:focus {
+    color: red;
+}
+
+/* :before is a pseudo-selector. It can add content and formatting "before" each of the selected elements */
+a:before {
+    content: "[ ";
+}
+/* :after is a pseudo-selector. It can add content and formatting "after" each of the selected elements */
+a:after {
+    content: " ]";
+}
+
+a:after,
+a:before {
+    /* you can style the before and after pseudoselectors independent from the element itself */
+    color: rgb(0, 255, 255);
+}
+
 div.description-of-purpose{
     margin: 1rem;
     padding: 1rem;
